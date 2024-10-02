@@ -1,4 +1,4 @@
-module program.retromedia.retromedia {
+module program.retromedia {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.media;
