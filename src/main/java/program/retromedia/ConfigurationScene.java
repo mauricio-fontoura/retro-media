@@ -17,5 +17,6 @@ public class ConfigurationScene {
                 stage.setY( mouseEvent.getScreenY() - axisY);
             });
         }
-    }
+
+}
 

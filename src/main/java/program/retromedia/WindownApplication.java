@@ -5,11 +5,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import program.retromedia.controller.DataBaseController;
 
 import java.io.IOException;
 
 public class WindownApplication extends Application {
-
+    DataBaseController dbController = new DataBaseController();
     ConfigurationScene confStage = new ConfigurationScene();
 
     @Override
@@ -21,6 +22,8 @@ public class WindownApplication extends Application {
         stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
         confStage.DraggerScreen(scene,stage);
+
+        dbController.CreateFileDb();
     }
 
     public static void main(String[] args) {

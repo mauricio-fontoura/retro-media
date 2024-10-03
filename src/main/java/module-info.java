@@ -6,4 +6,6 @@ module program.retromedia {
 
     opens program.retromedia to javafx.fxml;
     exports program.retromedia;
+    exports program.retromedia.controller;
+    opens program.retromedia.controller to javafx.fxml;
 }
